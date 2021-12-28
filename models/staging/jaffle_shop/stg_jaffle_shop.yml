@@ -10,9 +10,7 @@ models:
 
   - name: stg_orders
     columns:
-
       - name: order_id
-
         tests:
           - unique
           - not_null
@@ -30,6 +28,6 @@ models:
       - name: customer_id
         tests:
           - relationships:
-              to: ref('customers')
+              to: ref('stg_customers')
               field: customer_id
                      
